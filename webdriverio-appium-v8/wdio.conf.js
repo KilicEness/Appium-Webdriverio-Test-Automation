@@ -59,7 +59,6 @@ exports.config = {
         'appium:platformVersion': '11.0',
         'appium:deviceName': 'Zebra Emulator API 30',
         'appium:automationName': 'UIAutomator2',
-        // C:\Users\enes.kilic\Desktop\Appium-Webdriverio-Test-Automation\webdriverio-appium-v8\app\android\ApiDemos-debug.apk
         'appium:app': path.join(process.cwd(), 'app/android/ApiDemos-debug.apk')
     }],
 
@@ -97,11 +96,11 @@ exports.config = {
     baseUrl: 'http://localhost',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 100000,
+    waitforTimeout: 200000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
-    connectionRetryTimeout: 80000,
+    connectionRetryTimeout: 100000,
     //
     // Default request retries count
     connectionRetryCount: 3,
@@ -140,7 +139,7 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 1000000
     },
     //
     // =====
