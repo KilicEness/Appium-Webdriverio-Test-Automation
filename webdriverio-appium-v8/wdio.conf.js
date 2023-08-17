@@ -26,7 +26,7 @@ exports.config = {
     //
     specs: [
         // ToDo: define location for spec files here
-        './test/specs/**/*.js'
+        './test/specs/**/android-native*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -96,11 +96,11 @@ exports.config = {
     baseUrl: 'http://localhost',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 200000,
+    waitforTimeout: 10000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
-    connectionRetryTimeout: 100000,
+    connectionRetryTimeout: 10000,
     //
     // Default request retries count
     connectionRetryCount: 3,
