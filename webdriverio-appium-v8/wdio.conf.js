@@ -26,7 +26,7 @@ exports.config = {
     //
     specs: [
         // ToDo: define location for spec files here
-        './test/specs/**/android-native*.js'
+        './test/specs/android/*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -59,7 +59,8 @@ exports.config = {
         'appium:platformVersion': '11.0',
         'appium:deviceName': 'Zebra Emulator API 30',
         'appium:automationName': 'UIAutomator2',
-        'appium:app': path.join(process.cwd(), 'app/android/ApiDemos-debug.apk')
+        'appium:app': path.join(process.cwd(), 'app/android/ColorNote-Notepad.apk'),
+        'appium:autoGrantPermissions': true
     }],
 
     //
@@ -96,11 +97,11 @@ exports.config = {
     baseUrl: 'http://localhost',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 10000,
+    waitforTimeout: 30000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
-    connectionRetryTimeout: 10000,
+    connectionRetryTimeout: 60000,
     //
     // Default request retries count
     connectionRetryCount: 3,
