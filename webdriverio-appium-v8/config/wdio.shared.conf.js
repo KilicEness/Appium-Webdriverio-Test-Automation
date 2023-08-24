@@ -1,5 +1,3 @@
-const path = require('path');
-
 exports.config = {
     //
     // ====================
@@ -7,7 +5,6 @@ exports.config = {
     // ====================
     // WebdriverIO supports running e2e tests as well as unit and component tests.
     runner: 'local',
-    port: 4723,
     //
     // ==================
     // Specify Test Files
@@ -24,10 +21,6 @@ exports.config = {
     // then the current working directory is where your `package.json` resides, so `wdio`
     // will be called from there.
     //
-    specs: [
-        // ToDo: define location for spec files here
-        './test/specs/android/delete-note-screen*.js'
-    ],
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -54,15 +47,6 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-    capabilities: [{
-        'appium:platformName': 'Android',
-        'appium:platformVersion': '11.0',
-        'appium:deviceName': 'Zebra Emulator API 30',
-        'appium:automationName': 'UIAutomator2',
-        'appium:app': path.join(process.cwd(), 'app/android/ColorNote-Notepad.apk'),
-        'appium:autoGrantPermissions': true
-    }],
-
     //
     // ===================
     // Test Configurations
