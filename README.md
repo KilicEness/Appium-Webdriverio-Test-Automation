@@ -48,3 +48,21 @@ Then install appium doctor 'npm i -g appium-doctor
 I said No because this is not required to me
 
 Thats all now configure yours wdio.conf.js file and run yours test!!
+# Webdriverio  Framework Setup
+- Setup Folder Structure
+1. Specs
+
+2. Screens
+
+3. Data: In your data folder is where you're going to be stroring all your test data related files. So this can be your documents, your images, some random test data that you're generating. Everything get stored over there
+
+4. Utils: Under your utility folder, you're going to store anything helper related functions that are not part of the screen object.
+
+- Setup JSConfig for Autocompletion
+https://webdriver.io/docs/autocompletion/ in this link you can get it.
+
+- Setup Babel
+https://webdriver.io/docs/babel/ To write tests using next-generation JavaScript features, you can use Babel to compile your test files.
+
+- Setup Linter
+https://www.npmjs.com/package/eslint-plugin-wdio ESLint rules for WebdriverIO.
