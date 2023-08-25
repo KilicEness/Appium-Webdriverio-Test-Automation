@@ -8,7 +8,7 @@ describe('Add Notes', () => {
     it('Add a note, save changes & verify note', async () => {
         await $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/main_btn1"]').click();
         await $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/text"]').click();
-        await expect($('[text="Editing"]')).toBeDisplayed();
+        await expect($('//*[@text="Editing"]')).toBeDisplayed();
 
         // add note title
         await $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/edit_title"]')

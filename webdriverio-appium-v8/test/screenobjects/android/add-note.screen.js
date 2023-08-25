@@ -12,7 +12,7 @@ class AddNoteScreen {
     }
 
     get textEditing() {
-        return $('[text="Editing"]');
+        return $('//*[@text="Editing"]');
     }
 
     get noteHeading() {

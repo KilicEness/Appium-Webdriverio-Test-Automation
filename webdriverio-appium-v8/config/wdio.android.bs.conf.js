@@ -7,7 +7,7 @@ config.key = process.env.BROWSERSTACK_KEY;
 
 config.specs = [
     // ToDo: define location for spec files here
-    path.join(process.cwd(), './test/specs/android/add-note-screen*.js')
+    path.join(process.cwd(), './test/specs/android/delete-note-screen*.js')
 ];
 
 // ============
