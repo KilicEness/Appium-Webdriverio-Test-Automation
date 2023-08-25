@@ -1,2 +1,4 @@
 webdriverio-appium-v8/node_modules
 webdriverio-appium-v8/.env
+webdriverio-appium-v8/allure-report
+webdriverio-appium-v8/allure-results

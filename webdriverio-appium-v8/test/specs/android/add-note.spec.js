@@ -10,6 +10,8 @@ describe('Add Notes', () => {
         await $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/text"]').click();
         await expect($('//*[@text="Editing"]')).toBeDisplayed();
 
+        await driver.saveScreenshot('note-screen.png');
+
         // add note title
         await $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/edit_title"]')
             .addValue("Fav Anime List");
