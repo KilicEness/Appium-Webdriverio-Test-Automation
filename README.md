@@ -66,3 +66,7 @@ https://webdriver.io/docs/babel/ To write tests using next-generation JavaScript
 
 - Setup Linter
 https://www.npmjs.com/package/eslint-plugin-wdio ESLint rules for WebdriverIO.
+
+# Reporter
+- In this project, I used to be allure reporter. Allure generated results and reporter on the html file. For open this report use this 
+'npx allure open' on your terminal.

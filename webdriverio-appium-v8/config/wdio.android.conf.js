@@ -9,7 +9,7 @@ config.port = 4723;
 
 config.specs = [
     // ToDo: define location for spec files here
-    path.join(process.cwd(), './test/specs/android/add-note.spec.js')
+    path.join(process.cwd(), './test/specs/android/add-note-screen.spec.js')
 ];
 
 // ============
